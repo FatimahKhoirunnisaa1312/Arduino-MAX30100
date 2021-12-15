@@ -40,11 +40,11 @@ typedef struct {
     uint16_t red;
 } SensorReadout;
 
-class MAX30100 {
-public:
+class MAX30100 { /***/
+public: /***/
     MAX30100();
     bool begin();
-    void setMode(Mode mode);
+    void setMode(Mode mode); /***/
     void setLedsPulseWidth(LEDPulseWidth ledPulseWidth);
     void setSamplingRate(SamplingRate samplingRate);
     void setLedsCurrent(LEDCurrent irLedCurrent, LEDCurrent redLedCurrent);
